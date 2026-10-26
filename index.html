@@ -50,6 +50,16 @@
       text-wrap: balance;
     }
     p { margin: 0; color: var(--muted); }
+    .boxes { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: 1rem; }
+    .box {
+      border: 1px solid var(--line);
+      border-radius: .75rem;
+      padding: 1.25rem;
+      display: grid;
+      gap: .35rem;
+    }
+    .box h2 { margin: 0; font: 600 1.25rem/1.2 var(--display); }
+    .box p { font-size: .95rem; }
     footer {
       border-top: 1px solid var(--line);
       padding-top: 1rem;
@@ -63,6 +73,16 @@
     <span class="status">Deployment test</span>
     <h1>Meantor</h1>
     <p>A mentor for freelancers who want to close more clients. This is a placeholder page to confirm the site is live; the real app is on its way.</p>
+    <section class="boxes">
+      <div class="box">
+        <h2>Box one</h2>
+        <p>Test box. This will become a feature card.</p>
+      </div>
+      <div class="box">
+        <h2>Box two</h2>
+        <p>Test box. This will become a feature card.</p>
+      </div>
+    </section>
     <footer>If you can read this, the deploy worked.</footer>
   </main>
 </body>
